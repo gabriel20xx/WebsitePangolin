@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Mitr&display=swap');
+
+:root {
+    font-family: 'Mitr', sans-serif;
+    font-size: 12pt;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header, footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BF6B04;
+    height: 50px;
+}
+
+#banner {
+    width: 100%;
+}
+
+.picture, video{
+    width: 90%;
+    border-radius: 10px;
+
+}
+
+.navbar-button {
+    border-style: none;
+    background-color: #A64F03;
+    color: #F29F05;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 0.75vw;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    transition: all .2s ease-in-out;
+}
+
+.logo {
+    display: grid;
+    height: 50px;
+}
+
+.logo-top {
+    display: none;
+}
+
+.header-title {
+    display: none;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #F29F05;
+}
+
+header>nav>ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1vw;
+    margin-right: 2vw;
+    text-align: center;
+    list-style: none;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.pangulin-top {
+    display: block;
+}
+
+.pangulin-bottom {
+    display: none;
+}
+
+.inhaltsverzeichnis {
+    display: block;
+    width: 90%;
+    align-content: center;
+    margin: auto;
+    border: solid 0.5vh #83A603;
+}
+
+.inhaltsverzeichnis_button {
+    display: block;
+    color: #83A603;
+    margin-bottom: 1vh;
+    text-decoration: underline;
+    font-size: 5vw;
+}
+
+#jump-bar {
+    display: grid;
+    background-color: #3E5902;
+    height: 100%;
+}
+
+.jump-button {
+    color: #83A603;
+    border-bottom: solid 2px;
+    padding: 1vh 0;
+    font-size: 4vw;
+}
+
+article {
+    align-content: center;
+    margin-bottom: 2.5vh;
+    margin-top: 2.5vh;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #3E5902;
+}
+
+.text {
+    font-family: 'Castoro', serif;
+    width: 90%;
+    margin: auto;
+    color: #83A603;
+}
+
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+}
+
+.last {
+    margin-bottom: 3%;
+}
+
+/* Kontaktformular */
+.contact-form {
+    margin-bottom: 5%;
+}
+
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #83A603;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3E5902;
+}
+
+.container {
+    border-radius: 5px;
+    border: 2px solid #3E5902;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+textarea {
+    height: 200px;
+}
+
+
+@media screen and (min-width: 400px) {
+    .logo-top {
+        display: grid;
+        height: 50px;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    #home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .header-title {
+        display: grid;
+    }
+
+    li {
+        transition: all .2s ease-in-out;
+    }
+
+    li:hover {
+        transform: scale(1.2);
+    }
+
+    .navbar-button {
+        font-size: 1.5rem;
+        padding: 0 1vw;
+    }
+
+    header>nav>ul {
+        grid-column-gap: 2.5vw;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    .pangulin-top {
+        display: none;
+    }
+
+    .pangulin-bottom {
+        display: block;
+    }
+
+    .jump-button {
+        font-size: 1.5vw;
+        transition: all .2s ease-in-out;
+        border: none;
+    }
+
+    .jump-button:hover {
+        transform: scale(1.2);
+    }
+
+    #jump-bar {
+        grid-template-rows: 5vh 5vh 5vh 5vh 5vh 1fr;
+        margin-top: 0.5vh;
+    }
+
+    .inhaltsverzeichnis {
+        color: #83A603;
+        display: grid;
+        grid-template-rows: 10vh 10vh 10vh 10vh 1fr;
+        border: none;
+        background-color: #3E5902;
+        height: 100%;
+        width: 100%;
+    }
+
+    .inhaltsverzeichnis_button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .artikel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
